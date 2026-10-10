@@ -1,0 +1,101 @@
+/* Accent buttons — colors from settings via branding_styles (:root --ht-primary*) */
+
+:root {
+    --ht-on-primary: #1e2433;
+}
+
+.btn-primary,
+.btn-dark {
+    --bs-btn-bg: var(--ht-primary);
+    --bs-btn-border-color: var(--ht-primary-hover);
+    --bs-btn-color: var(--ht-on-primary);
+    --bs-btn-hover-bg: var(--ht-primary-hover);
+    --bs-btn-hover-border-color: var(--ht-primary-active);
+    --bs-btn-hover-color: var(--ht-on-primary);
+    --bs-btn-active-bg: var(--ht-primary-active);
+    --bs-btn-active-border-color: var(--ht-primary-active);
+    --bs-btn-active-color: var(--ht-on-primary);
+    --bs-btn-disabled-bg: var(--ht-primary);
+    --bs-btn-disabled-border-color: var(--ht-primary-hover);
+    --bs-btn-disabled-color: var(--ht-on-primary);
+    --bs-btn-focus-shadow-rgb: var(--ht-primary-rgb);
+    background-color: var(--ht-primary) !important;
+    border-color: var(--ht-primary-hover) !important;
+    color: var(--ht-on-primary) !important;
+    font-weight: 600;
+}
+
+.btn-primary:hover:not(:disabled):not(.disabled),
+.btn-dark:hover:not(:disabled):not(.disabled) {
+    background-color: var(--ht-primary-hover) !important;
+    border-color: var(--ht-primary-active) !important;
+    color: var(--ht-on-primary) !important;
+    filter: none;
+}
+
+.btn-primary:active:not(:disabled):not(.disabled),
+.btn-primary.active:not(:disabled):not(.disabled),
+.btn-dark:active:not(:disabled):not(.disabled),
+.btn-dark.active:not(:disabled):not(.disabled),
+.btn-primary.show:not(:disabled):not(.disabled),
+.btn-dark.show:not(:disabled):not(.disabled) {
+    background-color: var(--ht-primary-active) !important;
+    border-color: var(--ht-primary-active) !important;
+    color: var(--ht-on-primary) !important;
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled,
+.btn-dark:disabled,
+.btn-dark.disabled {
+    background-color: var(--ht-primary) !important;
+    border-color: var(--ht-primary-hover) !important;
+    color: var(--ht-on-primary) !important;
+    opacity: 0.55;
+}
+
+.btn-primary:focus-visible,
+.btn-dark:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(var(--ht-primary-rgb), 0.35) !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--ht-primary);
+    --bs-btn-border-color: var(--ht-primary);
+    --bs-btn-hover-bg: var(--ht-primary);
+    --bs-btn-hover-border-color: var(--ht-primary-hover);
+    --bs-btn-hover-color: var(--ht-on-primary);
+    --bs-btn-active-bg: var(--ht-primary-hover);
+    --bs-btn-active-border-color: var(--ht-primary-active);
+    --bs-btn-active-color: var(--ht-on-primary);
+    --bs-btn-focus-shadow-rgb: var(--ht-primary-rgb);
+    color: var(--ht-primary) !important;
+    border-color: var(--ht-primary) !important;
+    background-color: transparent !important;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover:not(:disabled):not(.disabled) {
+    background-color: var(--ht-primary) !important;
+    border-color: var(--ht-primary-hover) !important;
+    color: var(--ht-on-primary) !important;
+    filter: none;
+}
+
+.btn-outline-primary:active:not(:disabled):not(.disabled),
+.btn-outline-primary.active:not(:disabled):not(.disabled) {
+    background-color: var(--ht-primary-hover) !important;
+    border-color: var(--ht-primary-active) !important;
+    color: var(--ht-on-primary) !important;
+}
+
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+    color: var(--ht-primary) !important;
+    border-color: var(--ht-primary) !important;
+    opacity: 0.55;
+}
+
+.btn-outline-primary:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(var(--ht-primary-rgb), 0.35) !important;
+}
