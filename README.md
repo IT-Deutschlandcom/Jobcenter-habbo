@@ -1,2 +1,5 @@
-# Jobcenter-habbo
-Ein altes programm welches copilot aufpeppen soll
+# Habbo Jobcenter
+
+Dieses Projekt ist ein Jobcenter für Habbo.
+
+Es besteht ausschließlich aus HTML, einer älteren PHP-Version und einer älteren SQL-Version.
